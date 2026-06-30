@@ -1,0 +1,82 @@
+USE sibd_firmas;
+
+INSERT INTO core_especialidades (nombre, estado, orden) VALUES
+('ANESTESIOLOGIA', 'activo', 10),
+('CARDIOLOGIA', 'activo', 20),
+('CIRUGIA GENERAL', 'activo', 30),
+('CRED', 'activo', 40),
+('DERMATOLOGIA', 'activo', 50),
+('ENDOCRINOLOGIA', 'activo', 60),
+('GASTROENTEROLOGIA', 'activo', 70),
+('GINECOLOGIA', 'activo', 80),
+('INFECTOLOGIA', 'activo', 90),
+('MEDICINA ALTERNATIVA', 'activo', 100),
+('MEDICINA FAMILIAR', 'activo', 110),
+('MEDICINA FISICA', 'activo', 120),
+('MEDICINA GENERAL', 'activo', 130),
+('MEDICINA INTERNA', 'activo', 140),
+('NEUMOLOGIA', 'activo', 150),
+('NEUROLOGIA', 'activo', 160),
+('OBSTETRICIA', 'activo', 170),
+('ODONTOLOGIA', 'activo', 180),
+('OFTALMOLOGIA', 'activo', 190),
+('ONCOLOGIA', 'activo', 200),
+('OTORRINO', 'activo', 210),
+('PEDIATRIA GENERAL', 'activo', 220),
+('PSICOLOGIA', 'activo', 230),
+('PSIQUIATRIA', 'activo', 240),
+('REUMATOLOGIA', 'activo', 250),
+('TRAUMATOLOGIA', 'activo', 260),
+('UROLOGIA', 'activo', 270)
+ON DUPLICATE KEY UPDATE
+    estado = VALUES(estado),
+    orden = VALUES(orden);
+
+INSERT INTO st_configuracion (clave, valor) VALUES
+('ticket_titulo', 'HOSPITAL SAN\nJOSE DEL CALLAO'),
+('logo_izquierdo_url', 'https://thumbs4.imagebam.com/a4/33/1a/ME1CROZK_t.png'),
+('logo_derecho_url', 'https://thumbs4.imagebam.com/bd/2a/44/ME1CROVG_t.png'),
+('impresion_modo', 'navegador'),
+('impresion_ancho_mm', '80'),
+('impresion_codigo_px', '48'),
+('impresion_fecha_px', '28'),
+('impresion_documento_px', '17'),
+('impresion_icono_px', '54'),
+('impresion_padding_mm', '5'),
+('impresion_automatica', 'SI'),
+('impresion_retraso_ms', '120'),
+('ticket_papel_mm', '80'),
+('ticket_contenido_mm', '80'),
+('ticket_padding_mm', '5'),
+('ticket_logo_mm', '16'),
+('ticket_header_px', '15'),
+('ticket_codigo_px', '54'),
+('ticket_documento_px', '19'),
+('ticket_especialidad_px', '19'),
+('ticket_fecha_px', '31'),
+('ticket_codigo_margen_mm', '0'),
+('ticket_linea_margen_mm', '0'),
+('ticket_fecha_margen_mm', '0'),
+('ticket_offset_x_mm', '0'),
+('ticket_hospital_x_mm', '0'),
+('ticket_hospital_y_mm', '0'),
+('ticket_logo_left_x_mm', '0'),
+('ticket_logo_left_y_mm', '0'),
+('ticket_logo_right_x_mm', '0'),
+('ticket_logo_right_y_mm', '0'),
+('ticket_code_x_mm', '0'),
+('ticket_code_y_mm', '0'),
+('ticket_doc_x_mm', '0'),
+('ticket_doc_y_mm', '0'),
+('ticket_specialty_x_mm', '0'),
+('ticket_specialty_y_mm', '0'),
+('ticket_date_x_mm', '0'),
+('ticket_date_y_mm', '0')
+ON DUPLICATE KEY UPDATE valor = VALUES(valor);
+
+INSERT INTO st_impresoras (nombre, modo_impresion, ancho_mm, activa) VALUES
+('Navegador / Chrome kiosk', 'navegador', 80, 1)
+ON DUPLICATE KEY UPDATE
+    modo_impresion = VALUES(modo_impresion),
+    ancho_mm = VALUES(ancho_mm),
+    activa = VALUES(activa);

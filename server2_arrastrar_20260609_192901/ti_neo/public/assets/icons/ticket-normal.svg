@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-label="Ticket normal">
+  <rect width="96" height="72" rx="14" fill="#F9C74F"/>
+  <path d="M14 14h68a8 8 0 0 1 8 8v28a8 8 0 0 1-8 8H14a8 8 0 0 1-8-8V22a8 8 0 0 1 8-8Z" fill="#FFD76A"/>
+  <circle cx="6" cy="36" r="9" fill="#fff"/>
+  <circle cx="90" cy="36" r="9" fill="#fff"/>
+  <path d="M35 18v40" stroke="#B7791F" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 7"/>
+  <rect x="46" y="23" width="28" height="6" rx="3" fill="#8A5A12"/>
+  <rect x="46" y="35" width="34" height="6" rx="3" fill="#8A5A12"/>
+  <rect x="46" y="47" width="22" height="6" rx="3" fill="#8A5A12"/>
+  <circle cx="24" cy="28" r="6" fill="#F8961E"/>
+  <circle cx="24" cy="44" r="6" fill="#F8961E"/>
+</svg>

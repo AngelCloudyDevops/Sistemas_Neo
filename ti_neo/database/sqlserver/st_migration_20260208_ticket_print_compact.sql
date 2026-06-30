@@ -1,0 +1,2 @@
+-- Usar st_migration_20260208_reset_print_defaults.sql (valores base).
+-- Este archivo se mantiene solo como referencia.

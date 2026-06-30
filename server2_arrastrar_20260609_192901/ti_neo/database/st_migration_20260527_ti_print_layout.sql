@@ -1,0 +1,38 @@
+USE sibd_firmas;
+
+INSERT INTO st_configuracion (clave, valor) VALUES
+('ticket_titulo', 'HOSPITAL SAN\nJOSE DEL CALLAO'),
+('logo_izquierdo_url', 'https://thumbs4.imagebam.com/a4/33/1a/ME1CROZK_t.png'),
+('logo_derecho_url', 'https://thumbs4.imagebam.com/bd/2a/44/ME1CROVG_t.png'),
+('impresion_automatica', 'SI'),
+('impresion_retraso_ms', '120'),
+('ticket_papel_mm', '80'),
+('ticket_contenido_mm', '80'),
+('ticket_padding_mm', '5'),
+('ticket_logo_mm', '16'),
+('ticket_header_px', '15'),
+('ticket_codigo_px', '54'),
+('ticket_documento_px', '19'),
+('ticket_especialidad_px', '19'),
+('ticket_fecha_px', '31'),
+('ticket_codigo_margen_mm', '0'),
+('ticket_linea_margen_mm', '0'),
+('ticket_fecha_margen_mm', '0'),
+('ticket_offset_x_mm', '0'),
+('ticket_hospital_x_mm', '0'),
+('ticket_hospital_y_mm', '0'),
+('ticket_logo_left_x_mm', '0'),
+('ticket_logo_left_y_mm', '0'),
+('ticket_logo_right_x_mm', '0'),
+('ticket_logo_right_y_mm', '0'),
+('ticket_code_x_mm', '0'),
+('ticket_code_y_mm', '0'),
+('ticket_doc_x_mm', '0'),
+('ticket_doc_y_mm', '0'),
+('ticket_specialty_x_mm', '0'),
+('ticket_specialty_y_mm', '0'),
+('ticket_date_x_mm', '0'),
+('ticket_date_y_mm', '0')
+ON DUPLICATE KEY UPDATE
+    valor = VALUES(valor),
+    actualizado_en = NOW();

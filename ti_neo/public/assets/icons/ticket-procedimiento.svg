@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-label="Ticket procedimiento">
+  <rect width="96" height="72" rx="14" fill="#34D399"/>
+  <path d="M14 14h68a8 8 0 0 1 8 8v28a8 8 0 0 1-8 8H14a8 8 0 0 1-8-8V22a8 8 0 0 1 8-8Z" fill="#D1FAE5"/>
+  <circle cx="6" cy="36" r="9" fill="#fff"/>
+  <circle cx="90" cy="36" r="9" fill="#fff"/>
+  <rect x="28" y="20" width="40" height="38" rx="6" fill="#fff" stroke="#047857" stroke-width="5"/>
+  <rect x="38" y="14" width="20" height="10" rx="5" fill="#10B981"/>
+  <path d="M48 30v18M39 39h18" stroke="#047857" stroke-width="7" stroke-linecap="round"/>
+  <path d="M70 25l8 8M78 25l-8 8" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+</svg>

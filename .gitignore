@@ -1,0 +1,51 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+**/config/config.local.php
+**/config/config.local.server.php
+
+# Logs and runtime output
+*.log
+**/logs/
+**/cache/
+**/tmp/
+**/temp/
+**/storage/
+
+# Dependency folders
+**/vendor/
+**/node_modules/
+
+# Generated packages and archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+**/bk_basededatos.sql
+**/*backup*.sql
+
+# Nested local repository; publish separately or flatten intentionally.
+verCitasHSJ/
+
+# Projects and working folders outside the NEO suite.
+ANTIGUO/
+SIBD/
+deploy-ti-neo-20260611-cross-window-refresh/
+deploy_server2_20260609_191810/
+docs/
+error/
+inventariobase/
+neo_portal/
+saas_gimnasio/
+sie/
+sn/
+ti/
+turnero_diseño_alternativo/
+
+# Local/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.fuse_hidden*
